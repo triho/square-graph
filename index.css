@@ -1,0 +1,54 @@
+/* 
+    Document   : index
+    Created on : May 14, 2011, 9:03:14 AM
+    Author     : triho
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#content{
+    width: 850px;
+    overflow: auto;
+}
+
+#shares{
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border-right: 1px dashed black;
+    min-height: 400px;
+}
+
+#shares .share{
+    width: 180px;
+    padding: 5px;
+}
+
+#shares .title{
+    font-weight: bold;
+}
+
+#shares input[type=text]{
+    width: 80px;
+    margin-left: 20px;
+}
+
+#graph{
+    padding: 0;
+    float:right;
+}
+
+#shares .share label{
+    width: 40px;
+    display: inline-block;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Square Graph</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="index.css" />
+        <script type="text/javascript" src="jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <h2>Market Share Graph</h2>
+        <div id="content">
+            <div id="shares">
+                <div class="share">
+                    <div class="title">How many shares?</div>
+                    <input type="text" id="number-of-shares" />
+                    <input type="button" id="generate-inputs" value="create" />
+                </div>
+                
+            </div>
+            <canvas id="graph">
+
+            </canvas>
+        </div>
+        
+        <script id="share" type="text/template">
+            <div class="share">
+                <label>Title: </label><input type="text" class="share-title" value="apple" />
+                <label>Value: </label><input type="text" class="share-value" value="${value}" />
+            </div>
+        </script>
+        
+        <script id="controller-tmpl" type="text/template">
+            <div id="controller">
+                <input type="button" id="draw" value="draw" />
+            </div>
+        </script>
+    </body>
+</html>
